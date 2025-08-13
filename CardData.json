@@ -1,0 +1,21 @@
+
+{
+  "BASH_A": {
+    "name": "Bash",
+    "type": "Attack",
+    "cost": 2,
+    "effects": [
+      { "type": "deal", "value": 8, "target": "enemy" },
+      { "type": "apply", "status": "vulnerable", "value": 2, "target": "enemy" }
+    ]
+  },
+  "STRIKE_A": {
+    "name": "Strike",
+    "type": "Attack",
+    "cost": 1,
+    "effects": [
+      { "type": "deal", "value": 6, "target": "enemy" }
+    ]
+  }
+}
+
