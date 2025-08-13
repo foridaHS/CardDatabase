@@ -16,6 +16,15 @@
     "effects": [
       { "type": "deal", "value": 6, "target": "enemy" }
     ]
+  },
+    "STRIKE_B": {
+    "name": "Strike+",
+    "type": "Attack",
+    "cost": 1,
+    "effects": [
+      { "type": "deal", "value": 9, "target": "enemy" }
+    ]
   }
 }
+
 
