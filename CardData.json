@@ -24,7 +24,16 @@
     "effects": [
       { "type": "deal", "value": 9, "target": "enemy" }
     ]
+  },
+      "DEFEND_A": {
+    "name": "Defend",
+    "type": "Defend",
+    "cost": 1,
+    "effects": [
+      { "type": "block", "value": 5, "target": "self" }
+    ]
   }
 }
+
 
 
