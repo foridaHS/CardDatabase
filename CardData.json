@@ -4,6 +4,7 @@
     "name": "Bash",
     "type": "Attack",
     "cost": 2,
+    "description" : "Deal 8 damage and apply 2 vulnerable to target.",
     "effects": [
       { "type": "deal", "value": 8, "target": "enemy" },
       { "type": "apply", "status": "vulnerable", "value": 2, "target": "enemy" }
@@ -13,6 +14,7 @@
     "name": "Strike",
     "type": "Attack",
     "cost": 1,
+    "description" : "Deal 6 damage to target.",
     "effects": [
       { "type": "deal", "value": 6, "target": "enemy" }
     ]
@@ -21,6 +23,7 @@
     "name": "Strike+",
     "type": "Attack",
     "cost": 1,
+    "description" : "Deal 9 damage to target.",
     "effects": [
       { "type": "deal", "value": 9, "target": "enemy" }
     ]
@@ -29,11 +32,13 @@
     "name": "Defend",
     "type": "Defend",
     "cost": 1,
+    "description" : "Gain 5 block.",
     "effects": [
       { "type": "block", "value": 5, "target": "self" }
     ]
   }
 }
+
 
 
 
