@@ -1,5 +1,6 @@
 {
     "Hp" : 100,
+    "Maxhp" : 100,
     "Block" : 0,
     "Barrier" : 0,
     "Status" : [],
