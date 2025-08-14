@@ -1,0 +1,9 @@
+{
+    "Hp" : 100,
+    "Block" : 0,
+    "Barrier" : 0,
+    "Status" : [],
+    "Relic" : [],
+    "Mana" : [],
+    "BaseMana" : []
+}
