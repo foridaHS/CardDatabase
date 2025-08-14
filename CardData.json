@@ -36,8 +36,27 @@
     "effects": [
       { "type": "block", "value": 5, "target": "self" }
     ]
+  },
+      "BLADE_DANCE_A": {
+    "name": "Blade Dance",
+    "type": "Skill",
+    "cost": 1,
+    "description" : "Add 3 shiv into hand.",
+    "effects": [
+      { "type": "add", "id" : "SHIV_A", "value": 3, "target": "hand" }
+    ]
+  },
+      "SHIV_A": {
+    "name": "Shiv",
+    "type": "Attack",
+    "cost": 0,
+    "description" : "Deal 3 damage. [EXILE]",
+    "effects": [
+      { "type": "exile", "condition" : "onplay"}
+    ]
   }
 }
+
 
 
 
