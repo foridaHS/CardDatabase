@@ -1,64 +1,72 @@
-
 {
   "BASH_A": {
     "name": "Bash",
     "type": "Attack",
     "cost": ["2c"],
-    "description" : "Deal 8 damage and apply 2 vulnerable to target.",
-    "effects": [
-      { "type": "deal", "value": 8, "target": "enemy" },
-      { "type": "apply", "status": "vulnerable", "value": 2, "target": "enemy" }
-    ]
+    "description": "Deal 8 damage and apply 2 vulnerable to target.",
+    "effects": {
+      "on_use": [
+        { "type": "deal", "value": 8, "target": "enemy" },
+        { "type": "apply", "status": "vulnerable", "value": 2, "target": "enemy" }
+      ]
+    }
   },
   "STRIKE_A": {
     "name": "Strike",
     "type": "Attack",
     "cost": ["1c"],
-    "description" : "Deal 6 damage to target.",
-    "effects": [
-      { "type": "deal", "value": 6, "target": "enemy" }
-    ]
+    "description": "Deal 6 damage to target.",
+    "effects": {
+      "on_use": [
+        { "type": "deal", "value": 6, "target": "enemy" }
+      ]
+    }
   },
-    "STRIKE_B": {
+  "STRIKE_B": {
     "name": "Strike+",
     "type": "Attack",
     "cost": ["1c"],
-    "description" : "Deal 9 damage to target.",
-    "effects": [
-      { "type": "deal", "value": 9, "target": "enemy" }
-    ]
+    "description": "Deal 9 damage to target.",
+    "effects": {
+      "on_use": [
+        { "type": "deal", "value": 9, "target": "enemy" }
+      ]
+    }
   },
-      "DEFEND_A": {
+  "DEFEND_A": {
     "name": "Defend",
     "type": "Defend",
     "cost": ["1c"],
-    "description" : "Gain 5 block.",
-    "effects": [
-      { "type": "block", "value": 5, "target": "self" }
-    ]
+    "description": "Gain 5 block.",
+    "effects": {
+      "on_use": [
+        { "type": "block", "value": 5, "target": "self" }
+      ]
+    }
   },
-      "BLADE_DANCE_A": {
+  "BLADE_DANCE_A": {
     "name": "Blade Dance",
     "type": "Skill",
     "cost": ["1c"],
-    "description" : "Add 3 shiv into hand.",
-    "effects": [
-      { "type": "add", "id" : "SHIV_A", "value": 3, "target": "hand" }
-    ]
+    "description": "Add 3 shiv into hand.",
+    "effects": {
+      "on_use": [
+        { "type": "add", "id": "SHIV_A", "value": 3, "target": "hand" }
+      ]
+    }
   },
-      "SHIV_A": {
+  "SHIV_A": {
     "name": "Shiv",
     "type": "Attack",
     "cost": ["0"],
-    "description" : "Deal 3 damage. [EXILE]",
-    "effects": [
-      { "type": "exile", "condition" : "onplay"}
-    ]
+    "description": "Deal 3 damage. [EXILE]",
+    "effects": {
+      "on_use": [
+        { "type": "deal", "value": 3, "target": "enemy" }
+      ],
+      "on_play": [
+        { "type": "exile" }
+      ]
+    }
   }
 }
-
-
-
-
-
-
