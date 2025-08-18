@@ -62,11 +62,10 @@
     "description": "Deal 3 damage. [EXILE]",
     "effects": {
       "on_use": [
-        { "type": "deal", "value": 3, "target": "enemy" }
-      ],
-      "on_play": [
-        { "type": "exile" }
+        { "type": "deal", "value": 3, "target": "enemy" },
+        { "type": "exile", "target": "self" }
       ]
     }
   }
 }
+
