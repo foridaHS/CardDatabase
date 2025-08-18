@@ -3,6 +3,7 @@
     "name": "Bash",
     "type": "Attack",
     "cost": ["2c"],
+    "playable": "true",
     "description": "Deal 8 damage and apply 2 vulnerable to target.",
     "effects": {
       "on_use": [
@@ -15,6 +16,7 @@
     "name": "Strike",
     "type": "Attack",
     "cost": ["1c"],
+    "playable": "true",
     "description": "Deal 6 damage to target.",
     "effects": {
       "on_use": [
@@ -26,6 +28,7 @@
     "name": "Strike+",
     "type": "Attack",
     "cost": ["1c"],
+    "playable": "true",
     "description": "Deal 9 damage to target.",
     "effects": {
       "on_use": [
@@ -37,6 +40,7 @@
     "name": "Defend",
     "type": "Defend",
     "cost": ["1c"],
+    "playable": "true",
     "description": "Gain 5 block.",
     "effects": {
       "on_use": [
@@ -48,6 +52,7 @@
     "name": "Blade Dance",
     "type": "Skill",
     "cost": ["1c"],
+    "playable": "true",
     "description": "Add 3 shiv into hand.",
     "effects": {
       "on_use": [
@@ -59,6 +64,7 @@
     "name": "Shiv",
     "type": "Attack",
     "cost": ["0"],
+    "playable": "true",
     "description": "Deal 3 damage. [EXILE]",
     "effects": {
       "on_use": [
@@ -68,4 +74,5 @@
     }
   }
 }
+
 
