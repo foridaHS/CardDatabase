@@ -1,6 +1,6 @@
 {
-  WOLF_A : {
-    "name" : wolf,
+  "WOLF_A" : {
+    "name" : "wolf",
     "hp" : [26,35],
     "behavior" : "random",
     "pattern" : ["wolf_1", "wolf_2", "wolf_3"],
