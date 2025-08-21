@@ -13,6 +13,6 @@
         { "type": "apply", "status": "frail", "value": 2, "target": "player"}
               ]
                 },
-    "status" : []
+    "status" : {}
   }
 }
