@@ -3,8 +3,12 @@
     "Maxhp" : 100,
     "Block" : 0,
     "Barrier" : 0,
-    "Status" : [],
+    "Status" : {},
     "Relic" : [],
-    "Mana" : [],
-    "BaseMana" : []
+    "Mana" : {},
+    "BaseMana" : {},
+    "SkillPoint" : 0,
+    "Skill" : {},
+    "Power" : 0,
+    "MaxPower" : 100
 }
