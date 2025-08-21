@@ -3,7 +3,16 @@
     "name" : "wolf",
     "hp" : [26,35],
     "behavior" : "random",
-    "pattern" : ["wolf_1", "wolf_2", "wolf_3"],
+    "pattern" : {
+      "Bite" : [
+        { "type": "deal", "value": 8, "target": "player" },
+        { "type": "apply", "status": "vulnerable", "value": 2, "target": "player" }
+              ],
+      "Ram" : [
+        { "type": "deal", "value": 5, "target": "player"},
+        { "type": "apply", "status": "frail", "value": 2, "target": "player"}
+              ]
+                }
     "status" : []
   }
 }
