@@ -72,7 +72,34 @@
         { "type": "exile", "target": "self" }
       ]
     }
+  },
+  "FOCUS_SPIRIT": {
+    "name": "Focus Spirit",
+    "type": "Skill",
+    "cost": ["1c"],
+    "playable": "true",
+    "description": "Gain 3 temporary strength and endurance..",
+    "effects": {
+      "on_use": [
+        { "type": "apply", "status": "strength_up_temporary", "value": 3, "target": "player" },
+        { "type": "apply", "status": "endurance_up_temporary", "value": 3, "target": "player" }
+      ]
+    }
+  },
+  "CRUSH_SPIRIT": {
+    "name": "Focus Spirit",
+    "type": "Skill",
+    "cost": ["1c"],
+    "playable": "true",
+    "description": "Gain 3 temporary strength and endurance..",
+    "effects": {
+      "on_use": [
+        { "type": "apply", "status": "strength_up_temporary", "value": 3, "target": "player" },
+        { "type": "apply", "status": "endurance_up_temporary", "value": 3, "target": "player" }
+      ]
+    }
   }
 }
+
 
 
