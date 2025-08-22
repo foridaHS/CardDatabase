@@ -10,5 +10,6 @@
     "SkillPoint" : 0,
     "Skill" : {},
     "Power" : 0,
-    "MaxPower" : 100
+    "MaxPower" : 100,
+    "Money" : 0
 }
