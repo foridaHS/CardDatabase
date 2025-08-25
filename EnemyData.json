@@ -2,6 +2,8 @@
   "WOLF_A" : {
     "name" : "wolf",
     "hp" : [26,35],
+    "block" : 0,
+    "barrier" : 0,
     "behavior" : "random",
     "pattern" : {
       "Bite" : [
