@@ -5,6 +5,7 @@
     "cost": ["2c"],
     "playable": "true",
     "description": "Deal 8 damage and apply 2 vulnerable to target.",
+    "targeting": "true",
     "effects": {
       "on_use": [
         { "type": "deal", "value": 8, "target": "enemy" },
@@ -18,6 +19,7 @@
     "cost": ["1c"],
     "playable": "true",
     "description": "Deal 6 damage to target.",
+    "targeting": "true",    
     "effects": {
       "on_use": [
         { "type": "deal", "value": 6, "target": "enemy" }
@@ -30,6 +32,7 @@
     "cost": ["1c"],
     "playable": "true",
     "description": "Deal 9 damage to target.",
+    "targeting": "true",    
     "effects": {
       "on_use": [
         { "type": "deal", "value": 9, "target": "enemy" }
@@ -42,6 +45,7 @@
     "cost": ["1c"],
     "playable": "true",
     "description": "Gain 5 block.",
+    "targeting": "false",    
     "effects": {
       "on_use": [
         { "type": "block", "value": 5, "target": "self" }
@@ -54,6 +58,7 @@
     "cost": ["1c"],
     "playable": "true",
     "description": "Add 3 shiv into hand.",
+    "targeting": "false",    
     "effects": {
       "on_use": [
         { "type": "add", "id": "SHIV_A", "value": 3, "target": "hand" }
@@ -66,6 +71,7 @@
     "cost": ["0"],
     "playable": "true",
     "description": "Deal 3 damage. [EXILE]",
+    "targeting": "true",    
     "effects": {
       "on_use": [
         { "type": "deal", "value": 3, "target": "enemy" },
@@ -73,12 +79,13 @@
       ]
     }
   },
-  "FOCUS_SPIRIT": {
+  "FOCUS_SPIRIT_A": {
     "name": "Focus Spirit",
     "type": "Skill",
     "cost": ["1c"],
     "playable": "true",
-    "description": "Gain 3 temporary strength and endurance..",
+    "description": "Gain 3 temporary strength and endurance.",
+    "targeting": "false",    
     "effects": {
       "on_use": [
         { "type": "apply", "status": "strength_up_temporary", "value": 3, "target": "player" },
@@ -86,20 +93,36 @@
       ]
     }
   },
-  "CRUSH_SPIRIT": {
-    "name": "Focus Spirit",
+  "CRUSH_SPIRIT_A": {
+    "name": "Crush Spirit",
     "type": "Skill",
     "cost": ["1c"],
     "playable": "true",
-    "description": "Gain 3 temporary strength and endurance..",
+    "description": "applies 3 temporary strength and endurance to target.",
+    "targeting": "true",
     "effects": {
       "on_use": [
-        { "type": "apply", "status": "strength_up_temporary", "value": 3, "target": "player" },
-        { "type": "apply", "status": "endurance_up_temporary", "value": 3, "target": "player" }
+        { "type": "apply", "status": "strength_up_temporary", "value": 3, "target": "enemy" },
+        { "type": "apply", "status": "endurance_up_temporary", "value": 3, "target": "enemy" }
       ]
     }
   }
+  "DASH_A": {
+    "name": "Dash",
+    "type": "Skill",
+    "cost": ["1c"],
+    "playable": "true",
+    "description": "draw 2 card gain 1 colourless mana.",
+    "targeting": "false",
+    "effects": {
+      "on_use": [
+        { "type": "draw", "value": 2},
+        { "type": "gainmana", "value": {"c":1}}
+      ]
+    }
+  }  
 }
+
 
 
 
