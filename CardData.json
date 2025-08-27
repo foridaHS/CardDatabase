@@ -106,7 +106,7 @@
         { "type": "apply", "status": "endurance_up_temporary", "value": 3, "target": "enemy" }
       ]
     }
-  }
+  },
   "DASH_A": {
     "name": "Dash",
     "type": "Skill",
@@ -122,6 +122,7 @@
     }
   }  
 }
+
 
 
 
