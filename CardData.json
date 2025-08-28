@@ -8,7 +8,7 @@
     "targeting": "true",
     "effects": {
       "on_use": [
-        { "type": "deal", "value": 8, "target": "enemy" },
+        { "type": "deal", "value": 8, "time": 1, "target": "enemy" },
         { "type": "apply", "status": "vulnerable", "value": 2, "target": "enemy" }
       ]
     }
@@ -22,7 +22,7 @@
     "targeting": "true",    
     "effects": {
       "on_use": [
-        { "type": "deal", "value": 6, "target": "enemy" }
+        { "type": "deal", "value": 6, "time": 1, "target": "enemy" }
       ]
     }
   },
@@ -35,7 +35,7 @@
     "targeting": "true",    
     "effects": {
       "on_use": [
-        { "type": "deal", "value": 9, "target": "enemy" }
+        { "type": "deal", "value": 9, "time": 1, "target": "enemy" }
       ]
     }
   },
@@ -48,7 +48,7 @@
     "targeting": "false",    
     "effects": {
       "on_use": [
-        { "type": "block", "value": 5, "target": "self" }
+        { "type": "block", "value": 5, "time": 1, "target": "self" }
       ]
     }
   },
@@ -74,7 +74,7 @@
     "targeting": "true",    
     "effects": {
       "on_use": [
-        { "type": "deal", "value": 3, "target": "enemy" },
+        { "type": "deal", "value": 3, "time": 1, "target": "enemy" },
         { "type": "exile", "target": "self" }
       ]
     }
@@ -120,8 +120,23 @@
         { "type": "gainmana", "value": {"c":1}}
       ]
     }
+  },
+  "CLEAN_A": {
+    "name": "Clean",
+    "type": "Skill",
+    "cost": ["1c"],
+    "playable": "true",
+    "description": "draw 2 cards then discard 1 card.",
+    "targeting": "false",
+    "effects": {
+      "on_use": [
+        { "type": "draw", "value": 2},
+        { "type": "choosediscard", "value": 1}
+      ]
+    }
   }  
 }
+
 
 
 
